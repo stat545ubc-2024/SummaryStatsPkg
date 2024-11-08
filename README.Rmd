@@ -1,0 +1,41 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# SummaryStatsPkg
+
+The "SummaryStatsPkg" package provides the summary_statistics function to aid in quick data analysis. It calculates the mean, median, standard deviation and count of all non-NA values for specified numeric columns in a dataframe.
+
+## Installation
+
+You can install the development version of `SummaryStatsPkg` from GitHub with:
+
+```r
+devtools::install_github("stat545ubc-2024/SummaryStatsPkg")
+
+```
+
+## Example
+
+This is a basic example which shows you how to use the summary_statistics function:
+
+```{r example}
+# Load the package
+library(SummaryStatsPkg)
+
+# Example using the palmerpenguins dataset
+library(palmerpenguins)
+summary_statistics(penguins, columns = c("flipper_length_mm", "body_mass_g"))
+```
+

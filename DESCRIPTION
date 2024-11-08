@@ -1,0 +1,14 @@
+Package: SummaryStatsPkg
+Title: Summary Statistics for Dataframes
+Version: 0.1.1
+Authors@R: 
+    person("Anika", "Nag", email = "nag.anika1@gmail.com", role = c("aut", "cre"))
+Description: summary_statistics function provides a quick and easy way to calculate and view the summary statistics of specified numeric columns of a dataset. It creates a new dataframe with columns representing the following summary statistics: mean, median, standard_deviation and count of all non-NA values. Each row represents a specified column of the original dataset.  
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Suggests: 
+       palmerpenguins,
+       testthat (>= 3.0.0)
+Config/testthat/edition: 3
